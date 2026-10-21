@@ -1,0 +1,53 @@
+.counters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.counters .counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 12px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  text-align: center;
+}
+
+.counters .counter-card > div {
+  margin: 0;
+}
+
+.counters .counter-icon p,
+.counters .counter-number p,
+.counters .counter-label p {
+  margin: 0;
+}
+
+.counters .counter-icon .icon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.counters .counter-number {
+  margin: 8px 0 2px;
+  color: #0557d6;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.counters .counter-label {
+  color: #1b1b1b;
+  font-size: 16px;
+}
+
+@media (width >= 900px) {
+  .counters {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
