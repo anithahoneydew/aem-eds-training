@@ -1,0 +1,35 @@
+main .section.logos-container {
+  margin: 40px 0 0;
+}
+
+main .section.logos-container > div.logos-wrapper {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background: #0557d6;
+}
+
+.logos .logos-item p {
+  margin: 0;
+}
+
+.logos .logos-item img {
+  display: block;
+  width: auto;
+  max-width: 130px;
+  height: 70px;
+  object-fit: contain;
+}
+
+@media (width >= 900px) {
+  .logos { gap: 24px 90px; padding: 44px 24px; }
+}
