@@ -323,3 +323,20 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+main .section.center .default-content-wrapper {
+  text-align: center;
+}
+
+main .section.center .default-content-wrapper h2 {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+main .section.center .default-content-wrapper p {
+  max-width: 640px;
+  margin: 0 auto 32px;
+  font-size: 14px;
+  line-height: 1.6;
+}

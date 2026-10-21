@@ -1,0 +1,108 @@
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pricing .pricing-card {
+  padding: 32px 20px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  text-align: center;
+}
+
+.pricing .pricing-card p {
+  margin: 0;
+}
+
+.pricing .pricing-name {
+  color: #333;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.pricing .pricing-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 112px;
+  margin: 22px auto;
+  border-radius: 50%;
+  background: #0557d6;
+  color: #fff;
+}
+
+.pricing .pricing-amount {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.pricing .pricing-cur {
+  margin: 4px 3px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pricing .pricing-num {
+  font-size: 28px;
+}
+
+.pricing .pricing-label {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pricing .pricing-list ul {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.pricing .pricing-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #1b1b1b;
+}
+
+.pricing .pricing-list li::before {
+  content: '\203A';
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.pricing a.pricing-btn:any-link {
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 3px;
+  background: #0557d6;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.pricing a.pricing-btn:hover {
+  background: #0443a8;
+}
+
+@media (width >= 900px) {
+  .pricing { grid-template-columns: repeat(3, 1fr); }
+}
