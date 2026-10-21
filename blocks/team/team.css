@@ -1,0 +1,81 @@
+.team {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team .team-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  text-align: center;
+}
+
+.team .team-card p {
+  margin: 0;
+}
+
+.team .team-photo picture,
+.team .team-photo img {
+  display: block;
+  width: 100%;
+}
+
+.team .team-photo img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.team .team-who {
+  padding-top: 12px;
+}
+
+.team .team-who p:first-child {
+  color: #333;
+  font-size: 16px;
+}
+
+.team .team-who p:last-child {
+  font-size: 11px;
+}
+
+.team .team-text {
+  padding: 4px 12px 0;
+  font-size: 11px;
+}
+
+.team .team-social {
+  padding: 10px 0 14px;
+}
+
+.team .team-social p {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.team .team-social a:any-link {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+}
+
+.team .team-social a:hover {
+  border-color: #0557d6;
+}
+
+.team .team-social .icon img {
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+@media (width >= 900px) {
+  .team { grid-template-columns: repeat(3, 1fr); }
+}

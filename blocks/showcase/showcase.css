@@ -1,0 +1,60 @@
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.showcase .showcase-card {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.showcase .showcase-image picture,
+.showcase .showcase-image img {
+  display: block;
+  width: 100%;
+}
+
+.showcase .showcase-image img {
+  aspect-ratio: 23 / 25;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.showcase .showcase-image p {
+  margin: 0;
+}
+
+.showcase .showcase-caption {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  padding: 12px 8px 10px;
+  background: #fff;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 12%);
+  text-align: center;
+}
+
+.showcase .showcase-caption h3 {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.showcase .showcase-caption p {
+  margin: 2px 0 0;
+  color: #0557d6;
+  font-size: 11px;
+}
+
+@media (width >= 600px) {
+  .showcase { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (width >= 900px) {
+  .showcase { grid-template-columns: repeat(4, 1fr); }
+}
